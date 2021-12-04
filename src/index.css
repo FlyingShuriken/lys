@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+[data-theme="dark"] {
+  --font-color: rgb(255, 255, 255);
+}
+[data-theme="light"] {
+  --font-color: rgb(0, 0, 0);
+}
+
+p {
+  color: var(--font-color);
+}
