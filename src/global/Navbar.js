@@ -50,7 +50,7 @@ const Navbar = () => {
                     .then((result) => {
                         //
                     }).catch((error) => {
-                        // 
+                        alert(error)
                     })
                 setLoading("");
             }
@@ -84,7 +84,7 @@ const Navbar = () => {
                                 {currentUser ?
                                     <div className="flex flex-col justify-center items-center">
                                         <p>Your current account : </p>
-                                        <img src={currentUser.photoURL} className="rounded-full h-24 w-24" />
+                                        <img src={currentUser.photoURL} className="rounded-full h-24 w-24" alt="profileImage" />
                                         {currentUser.displayName}
                                         <SignOut />
                                     </div>

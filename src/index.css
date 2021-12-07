@@ -6,6 +6,7 @@ html {
   margin: 0;
   padding: 0;
   background: var(--bg);
+  font-family: "Inconsolata", monospace;
   transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
@@ -18,4 +19,9 @@ html {
 
 p {
   color: var(--font-color);
+}
+
+.trendingCard {
+  flex: 1 1 150px; /*  Stretching: */
+  margin: 5px;
 }
